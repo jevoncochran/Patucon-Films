@@ -14,6 +14,7 @@ const FeaturedProjects = () => {
             url={project.url}
             title={project.title}
             summary={project.summary}
+            light={project.thumbnail}
           />
         ))}
       </div>
