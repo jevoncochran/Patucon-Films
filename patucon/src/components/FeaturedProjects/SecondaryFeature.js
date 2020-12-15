@@ -13,7 +13,7 @@ const SecondaryFeature = (props) => {
           height="252px"
           light={props.light}
           playIcon={<span></span>}
-          style={{ opacity: "0.85" }}
+          //   style={{ opacity: "0.85" }}
         />
       </div>
       <div className="fp-secondary-text-div">

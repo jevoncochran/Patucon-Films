@@ -13,7 +13,9 @@ const PrimaryFeature = () => {
             controls
             light={sembrandoLuchaScreenshot}
             playIcon={<span></span>}
-            style={{ opacity: "0.8" }}
+            // style={{ opacity: "0.8" }}
+            // onMouseOver={(e) => (e.target.style.opacity = "1")}
+            // onMouseLeave={(e) => (e.target.style.opacity = "0.5")}
           />
         </div>
       </div>
@@ -21,9 +23,16 @@ const PrimaryFeature = () => {
         <p className="pf-video-title">Sembrando Lucha</p>
         <p className="pf-video-summary">
           A small town confronts the expansion of an immigrant detention
-          facility in their backyard. The struggle continues, support the
-          community of McFarland by sharing and using our toolkit:
-          bit.ly/GEOoutMcFarland
+          facility in their backyard. The struggle continues: click{" "}
+          <a
+            href="bit.ly/GEOoutMcFarland"
+            target="_blank"
+            style={{ textDecoration: "none", color: "#f1c40f" }}
+          >
+            here
+          </a>{" "}
+          for more information on how you can support the community of
+          McFarland.
         </p>
       </div>
     </div>
