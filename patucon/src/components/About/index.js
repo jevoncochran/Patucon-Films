@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 import videographer from "../../assets/videographer.jpeg";
 
-const About = () => {
+const About = (props) => {
   return (
     <div className="about-main">
       <h1 className="about-headline">Lucas Solórzano</h1>
@@ -32,7 +32,12 @@ const About = () => {
             </p>
           </div>
           <div className="about-right-btn-container">
-            <button className="about-right-btn">Contact</button>
+            <button
+              className="about-right-btn"
+              onClick={() => props.history.push("/contact")}
+            >
+              Contact
+            </button>
           </div>
         </div>
       </div>
